@@ -1,6 +1,6 @@
 # API Protector addon for Cockpit CMS
 
-Rate Limit and Protect Scraping Content
+Rate Limit and Protect Content Scraping
 
 [Download this repo](https://github.com/ronaldaug/api-protector/archive/refs/heads/main.zip), extract zip and put into `addons` folder of Cockpit CMS.
 
@@ -15,6 +15,10 @@ Play with the configs in [config.php](https://github.com/ronaldaug/api-protector
 - **seconds** -	retry after minutes in seconds.
 - **show_only** - protect scraping collection data, `0` will show all entries. 
 By default, routing to `api/collections/entries/[mycollection]` will show all the entries, this is a kind of exposing the whole collection data. By setting `show_only` to `10`, it will show only `10` results per call.
+
+----
+
+> Note : This is not an official Cockpit addon
 
 ----
 
