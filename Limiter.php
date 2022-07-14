@@ -4,6 +4,10 @@ if (! defined('APIPROTECTOR')) {
 }
 
 /*
+
+- [https://gist.github.com/freekrai](freekrai)
+- [Session Based Rate Limitor Gist](https://gist.github.com/freekrai/cdcd6ebb29d84b9dc244282e64caf5fe)
+
 This is a really simple plug and play rate limiter class meant to be used with APIs.
 Using sessions means we can throw this into any PHP API quickly.
 $token can be anything to uniquely identify a user, either an IP address, an API key, a JWT token, anything that is unique to a single user.
