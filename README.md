@@ -13,8 +13,8 @@ Play with the configs in [config.php](https://github.com/ronaldaug/api-protector
 - **limit** - number of connections to limit user to per minutes. Default value is `100` and it means it allows 100 calls per minute.
 - **minutes** - number of  minutes to check for.
 - **seconds** -	retry after minutes in seconds.
-- **show_only** - protect scraping collection data, show only 10 entries per call. 
-By default, routing to `api/collections/entries/[mycollection]` will show all the entries, this is a kind of exposing the whole collection data. By setting `show_only` to 10, it will show only 10 results per call.
+- **show_only** - protect scraping collection data, `0` will show all entries. 
+By default, routing to `api/collections/entries/[mycollection]` will show all the entries, this is a kind of exposing the whole collection data. By setting `show_only` to `10`, it will show only `10` results per call.
 
 ----
 

@@ -34,9 +34,12 @@ if (COCKPIT_API_REQUEST) {
     /** ----------------------------------------------------------------------------------------------------
      *  Protect scraping the whole API data when calling `api/collections/entries/[collection_name]`
      * ----------------------------------------------------------------------------------------------------- */
-    $app->on('collections.find.after', function ($name, &$entries) use ($app) {
+    $app->on('collections.find.after', function ($name, &$entries) use ($app, $config) {
+        if ($config['show_only'] == 0) {
+            return;
+        }
 
         // Limit 10 entries
-        $entries = array_slice($entries, 0, 10);
+        $entries = array_slice($entries, 0, $config['show_only']);
     });
 }
