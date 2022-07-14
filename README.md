@@ -1,4 +1,4 @@
-# API Protector
+# API Protector addon for Cockpit CMS
 
 Rate Limit and Protect Scraping Content
 
